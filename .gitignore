@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Android Studio and IntelliJ IDEA
+**/.idea/
+**/*.iml
+**/local.properties
+
+# Gradle and Android build output
+**/.gradle/
+**/build/
+**/captures/
+*.apk
+*.aab
