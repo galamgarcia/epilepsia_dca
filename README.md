@@ -41,6 +41,7 @@ La solución permite configurar notificaciones en el dispositivo y avisos SMS a 
 ```text
 Android/
   app/                 Aplicación Android
+  angel-sdk-debug/     SDK de Angel Sensor usado por la aplicación
   angel-sdk-release/   Biblioteca de Angel Sensor incluida en el repositorio
   gradle/              Gradle Wrapper
 ```
@@ -53,7 +54,7 @@ El proyecto se conserva con la configuración de Android y Gradle empleada duran
 ./gradlew assembleDebug
 ```
 
-La aplicación declara el módulo `angel-sdk-debug`, que no está presente en este repositorio. Para compilarla será necesario disponer de ese módulo o ajustar la dependencia para emplear la biblioteca `angel-sdk-release` incluida.
+La aplicación usa el módulo `angel-sdk-debug` incluido en el repositorio.
 
 ## Alcance y advertencia
 
