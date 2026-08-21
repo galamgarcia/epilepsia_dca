@@ -1,69 +1,71 @@
 # Epilepsia DCA
 
-Aplicación Android desarrollada como Trabajo Fin de Grado (TFG), titulada **"Monitorización de pacientes con pulseras inteligentes"**. Su objetivo es apoyar la monitorización de personas dependientes con daño cerebral adquirido (DCA) mediante la detección de posibles ataques epilépticos y el envío de alertas configurables a sus cuidadores.
+[English](README.md) | [Español](README.es.md)
 
-**Autora:** Gala M. García Sánchez  
-**Tutor:** José García Rodríguez  
-**Curso académico:** 2015-2016  
-**Fecha de publicación de la memoria:** 8 de octubre de 2016
+Android application developed as an undergraduate final project, titled **"Monitoring patients with smart bands"**. Its purpose is to support the monitoring of dependent people with acquired brain injury (ABI) by detecting possible epileptic seizures and sending configurable alerts to their caregivers.
 
-## Enlaces
+**Author:** Gala M. García Sánchez
+**Supervisor:** José García Rodríguez
+**Academic year:** 2015-2016
+**Project report publication date:** October 8, 2016
 
-- [Página del proyecto](https://galamgarcia.github.io/epilepsia_dca/)
-- [Memoria del TFG en el Repositorio Institucional de la Universidad de Alicante](https://rua.ua.es/entities/publication/1e5660cc-f1ce-48e6-8d6a-47b70f04587b)
+## Links
 
-## Objetivo
+- [Project page](https://galamgarcia.github.io/epilepsia_dca/)
+- [Undergraduate project report in the University of Alicante Institutional Repository](https://rua.ua.es/entities/publication/1e5660cc-f1ce-48e6-8d6a-47b70f04587b)
 
-El proyecto explora el uso de una pulsera inteligente para la monitorización continua de constantes vitales y la mejora de la autonomía de pacientes con DCA. La aplicación se conecta mediante Bluetooth a una pulsera Angel Sensor, analiza los valores recibidos y genera una alerta cuando el ritmo cardiaco permanece fuera del rango configurado durante el tiempo establecido por la persona cuidadora.
+## Purpose
 
-La solución permite configurar notificaciones en el dispositivo y avisos SMS a un teléfono de emergencia. También muestra información de conexión, batería, señal, ritmo cardiaco y temperatura.
+The project explores the use of a smart band for the continuous monitoring of vital signs and for improving the autonomy of patients with ABI. The application connects to an Angel Sensor band over Bluetooth, analyzes the received values, and generates an alert when the heart rate remains outside the configured range for the period set by the caregiver.
 
-## Funcionalidades
+The solution allows device notifications and SMS alerts to an emergency phone number to be configured. It also displays connection, battery, signal, heart rate, and temperature information.
 
-- Registro, inicio de sesión y edición del perfil de usuario.
-- Búsqueda y conexión Bluetooth con una pulsera Angel Sensor.
-- Visualización de ritmo cardiaco, temperatura, batería y potencia de señal.
-- Configuración de los límites mínimo y máximo de frecuencia cardiaca y del tiempo de espera para la alerta.
-- Alertas mediante notificación local y/o SMS a un contacto de emergencia.
-- Persistencia local de usuarios y configuración mediante SQLite.
+## Features
 
-## Tecnologías
+- User registration, sign-in, and profile editing.
+- Bluetooth discovery and connection to an Angel Sensor band.
+- Display of heart rate, temperature, battery level, and signal strength.
+- Configuration of the minimum and maximum heart rate thresholds and the alert delay.
+- Alerts through a local notification and/or SMS to an emergency contact.
+- Local persistence of users and settings with SQLite.
 
-- Android nativo con Java.
-- Android SDK 24 y Android Gradle Plugin 2.1.2.
-- Compatibilidad mínima: Android 4.3 (API 18).
-- Gradle 2.10 mediante Gradle Wrapper.
-- Bluetooth Low Energy y SDK de Angel Sensor.
+## Technologies
+
+- Native Android with Java.
+- Android SDK 24 and Android Gradle Plugin 2.1.2.
+- Minimum compatibility: Android 4.3 (API 18).
+- Gradle 2.10 through the Gradle Wrapper.
+- Bluetooth Low Energy and Angel Sensor SDK.
 - SQLite.
 
-## Estructura
+## Structure
 
 ```text
 Android/
-  app/                 Aplicación Android
-  angel-sdk-debug/     SDK de Angel Sensor usado por la aplicación
-  angel-sdk-release/   Biblioteca de Angel Sensor incluida en el repositorio
+  app/                 Android application
+  angel-sdk-debug/     Angel Sensor SDK used by the application
+  angel-sdk-release/   Angel Sensor library included in the repository
   gradle/              Gradle Wrapper
 ```
 
-## Compilación
+## Building
 
-El proyecto se conserva con la configuración de Android y Gradle empleada durante el TFG. Para abrirlo, importe el directorio `Android/` en una versión de Android Studio compatible con Android Gradle Plugin 2.1.2 y ejecute:
+The project is preserved with the Android and Gradle configuration used for the undergraduate project. To open it, import the `Android/` directory into a version of Android Studio compatible with Android Gradle Plugin 2.1.2, then run:
 
 ```bash
 ./gradlew assembleDebug
 ```
 
-La aplicación usa el módulo `angel-sdk-debug` incluido en el repositorio.
+The application uses the `angel-sdk-debug` module included in the repository.
 
-## Alcance y advertencia
+## Scope and disclaimer
 
-Este repositorio corresponde a un proyecto académico de 2016 y se publica con fines formativos y de investigación. No sustituye la supervisión médica ni constituye un producto sanitario certificado. Sus alertas no deben utilizarse como único mecanismo para tomar decisiones clínicas o de emergencia.
+This repository is an academic project from 2016 and is published for educational and research purposes. It does not replace medical supervision or constitute a certified medical device. Its alerts must not be used as the sole mechanism for making clinical or emergency decisions.
 
-## Palabras clave
+## Keywords
 
-Daño cerebral adquirido, pulseras inteligentes, epilepsia, monitorización, eSalud, aplicación e Internet de las Cosas.
+Acquired brain injury, smart bands, epilepsy, monitoring, eHealth, application, and Internet of Things.
 
-## Licencia
+## License
 
-El código se distribuye bajo la [GNU General Public License v3.0](LICENSE).
+The code is distributed under the [GNU General Public License v3.0](LICENSE).
